@@ -1,0 +1,58 @@
+/* Section - Services*/
+.container__services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  min-height: 500px;
+  background: linear-gradient(45deg, #111111 35%, #212121 45%, #2a2929 46%, #424040 50%, #2a2929 54%, #212121 55%, #111111 65%);
+  background-attachment: fixed;
+  font-size: 16px;
+  font-family: 'Aclonica', 'Charm', 'Kalam', 'Ubuntu', 'Poppins';
+  overflow: hidden;
+}
+
+.video__services {
+  width: 40vw;
+  height: 35vh;
+  object-fit: fill;
+  border-radius: 30px;
+  border: solid 2px #f2f2f2;
+  box-shadow: 2px 2px 8px #f2b705;
+}
+
+/* Responsive */
+
+/* Styles for portrait mode smartphones */
+@media only screen and (max-width: 500px) {
+  .video__services {
+    width: 90vw;
+  }
+}
+
+/* Styles for landscape mode smartphones */
+@media only screen and (max-width: 885px) and (orientation: landscape) {
+  .container__services {
+    height: 100vh;
+  }
+
+  .video__services {
+    width: 60vw;
+    height: 50vh;
+  }
+}
+
+/* Styles for tablets in both orientations */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container__services {
+    height: 100vh;
+  }
+
+  .video__services {
+    width: 70vw;
+    height: 40vh;
+  }
+}

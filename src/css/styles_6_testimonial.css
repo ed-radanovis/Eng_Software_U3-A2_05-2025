@@ -1,0 +1,16 @@
+/* Section - testimonial*/
+.container__testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  min-height: 500px;
+  background: linear-gradient(45deg, #111111 35%, #212121 45%, #2a2929 46%, #424040 50%, #2a2929 54%, #212121 55%, #111111 65%);
+  background-attachment: fixed;
+  font-size: 16px;
+  font-family: 'Aclonica', 'Charm', 'Kalam', 'Ubuntu', 'Poppins';
+  overflow: hidden;
+}

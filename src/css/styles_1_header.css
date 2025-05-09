@@ -1,0 +1,480 @@
+/* Nav - Inicio */
+.max_width__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1330px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.navbar {
+  position: fixed;
+  padding: 15px 0;
+  width: 100%;
+  height: 112px;
+  background-color: #262626f2;
+  font-family: 'Poppins', sans-serif;
+  z-index: 1000;
+}
+
+.navbar_min {
+  padding: 0;
+  height: 96px;
+  background-color: #f2f2f266;
+  opacity: .3;
+}
+
+.logo_img__nav {
+  width: 450px;
+  height: 90px;
+  background-color: #0d0d0dcc;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px rgb(242, 242, 242);
+}
+
+.logo_img__nav_min {
+  transform: scale(.67);
+}
+
+.menu__nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+.anchor__nav {
+  margin-left: 25px;
+  color: #A6A6A6;
+  filter: drop-shadow(3px 3px #0d0d0d);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+.anchor__nav:hover {
+  color: #f2b705;
+  filter: drop-shadow(3px 3px #37393d);
+  font-size: 1.25rem;
+  transition: .1s ease;
+}
+
+.anchor__nav.active-link {
+  color: #f2b705;
+  filter: drop-shadow(3px 3px #37393d);
+  font-size: 1.2rem;
+  transition: .1s ease;
+}
+
+.anchor__nav:active {
+  color: #A6A6A6;
+  filter: drop-shadow(3px 3px #0d0d0d);
+  font-size: 1.1rem;
+}
+
+.anchor__nav_scroll {
+  color: #0d0d0d;
+  filter: drop-shadow(2px 2px #f2b705);
+  transition: all .3s ease;
+}
+
+.anchor__nav_scroll:hover {
+  color: #f2b705;
+  filter: drop-shadow(2px 2px #0d0d0d);
+}
+
+.anchor__nav_scroll.active-link {
+  color: #f2f2f2f2;
+  filter: drop-shadow(2px 2px #0d0d0d);
+}
+
+/* Submenu Styles */
+.submenu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 34px);
+  left: 0;
+  background-color: #262626f2;
+  padding: 10px 0;
+  max-width: 150px;
+  z-index: 999;
+  border-radius: 0 0 10px 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.submenu.active {
+  display: block;
+  pointer-events: auto;
+}
+
+.submenu.active.submenu_min {
+  background-color: #f2f2f266;
+  pointer-events: auto;
+}
+
+.submenu__anchor {
+  display: block;
+  padding: 10px 20px;
+  color: #A6A6A6;
+  filter: drop-shadow(1px 1px #0d0d0d);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.6s ease-in-out;
+}
+
+.submenu__anchor:hover {
+  color: #f2b705;
+  filter: drop-shadow(2px 2px #0d0d0d);
+  background-color: transparent;
+}
+
+.submenu__anchor.active-link {
+  color: #f2b705;
+  filter: drop-shadow(2px 2px #0d0d0d);
+  background-color: transparent;
+}
+
+.submenu.active.submenu_min .submenu__anchor {
+  color: #0d0d0d;
+  filter: drop-shadow(2px 2px #f2b705);
+}
+
+.submenu.active.submenu_min .submenu__anchor:hover {
+  color: #f2b705;
+  filter: drop-shadow(2px 2px #0d0d0d);
+  background-color: transparent;
+}
+
+.submenu.active.submenu_min .submenu__anchor.active-link {
+  color: #f2b705;
+  filter: drop-shadow(2px 2px #0d0d0d);
+  background-color: transparent;
+}
+
+.nav-item {
+  position: relative;
+}
+
+/* Menu - Mobile */
+.btn_menu__nav {
+  display: none;
+  margin: 25px -35px 0 0;
+  color: #f2b705;
+  filter: drop-shadow(4px 4px 3px #0d0d0d);
+  font-size: 2.3rem;
+  cursor: pointer;
+}
+
+.submenu-toggle {
+  display: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.submenu-toggle ion-icon {
+  font-size: 1.2rem;
+  color: #a6a6a6;
+}
+
+/* Responsive */
+
+/* Styles for portrait mode smartphones */
+@media (max-width: 1024px) {
+  .max_width__nav {
+    padding: 0 35px 0 45px;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar_min {
+    opacity: 1;
+    background-color: transparent;
+  }
+
+  .menu__nav {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    padding: 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: #f2b70580;
+    text-align: center;
+    transition: all .8s ease-in-out;
+  }
+
+  .menu__nav.active {
+    top: 0;
+    background-color: #000000;
+    opacity: 1;
+  }
+
+  .navbar_min .menu__nav.active {
+    opacity: .7;
+  }
+
+  .menu__nav li {
+    display: block;
+  }
+
+  .anchor__nav {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 2.2rem;
+    font-weight: 400;
+    filter: drop-shadow(3px 3px #f2b705);
+  }
+
+  .anchor__nav.active-link {
+    font-size: 1.6rem;
+  }
+
+  .anchor__nav:active {
+    font-size: 1.5rem;
+  }
+
+  .logo_img__nav {
+    position: fixed;
+    max-width: 250px;
+    max-height: 50px;
+    margin: -12px 0 0 -30px;
+  }
+
+  .logo_img__nav_min {
+    display: none;
+  }
+
+  .btn_menu__nav {
+    display: block;
+    margin-right: -18px;
+    z-index: 999;
+  }
+
+  .btn_menu__nav_disable {
+    opacity: .4;
+  }
+
+  .submenu {
+    display: none;
+    position: static;
+    background-color: transparent;
+    padding-left: 20px;
+    max-width: none;
+  }
+
+  .submenu.active {
+    display: block;
+  }
+
+  .submenu.active.submenu_min {
+    background-color: transparent;
+  }
+
+  .submenu.active.submenu_min .submenu__anchor {
+    color: #A6A6A6;
+    filter: drop-shadow(1px 1px #0d0d0d);
+  }
+
+  .submenu.active.submenu_min .submenu__anchor:hover {
+    color: #f2b705;
+    filter: drop-shadow(2px 2px #0d0d0d);
+  }
+
+  .submenu.active.submenu_min .submenu__anchor.active-link {
+    color: #f2b705;
+    filter: drop-shadow(2px 2px #0d0d0d);
+    background-color: transparent;
+  }
+
+  .submenu__anchor {
+    font-size: 1.2rem;
+    padding: 10px 0;
+  }
+
+  .submenu-toggle {
+    display: inline-block;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Styles for landscape mode smartphones */
+@media only screen and (max-width: 885px) and (orientation: landscape) {
+  .navbar {
+    padding: 0;
+    height: 60px;
+  }
+
+  .menu__nav li {
+    display: inline-block;
+  }
+
+  .anchor__nav {
+    margin: 20px 15px;
+  }
+
+  .logo_img__nav {
+    margin: -26px 0 0 -20px;
+    width: 225px;
+    height: 45px;
+  }
+
+  .btn_menu__nav {
+    margin: 10px 5px 0 0;
+  }
+
+  .submenu {
+    padding-left: 10px;
+  }
+}
+
+/* Styles for tablets in both orientations */
+@media only screen and (min-width: 886px) and (max-width: 1024px) {
+  .max_width__nav {
+    padding: 0px 35px 0px 45px;
+  }
+
+  .navbar {
+    height: 135px;
+  }
+
+  .logo_img__nav {
+    margin: -20px 0 0 10px;
+    width: 330px;
+    height: 70px;
+  }
+
+  .logo_img__nav_min {
+    transform: scale(.67);
+  }
+
+  .anchor__nav {
+    font-size: 3.4rem;
+  }
+
+  .anchor__nav.active-link {
+    font-size: 3rem;
+  }
+
+  .anchor__nav:active {
+    font-size: 2.9rem;
+  }
+
+  .btn_menu__nav {
+    font-size: 4rem;
+  }
+
+  .submenu__anchor {
+    margin-top: 5px;
+    padding: 30px 20px;
+    font-size: 1.8rem;
+  }
+
+}
+
+/* Styles for Large screens Full HD resolution _ 1920 px above */
+@media only screen and (min-width: 1920px) and (max-width: 3839px) {
+  .max_width__nav {
+    max-width: none;
+  }
+
+  .navbar {
+    height: 130px;
+  }
+
+  .logo_img__nav {
+    width: 518px;
+    height: 105px;
+    border-radius: 13px;
+    margin-top: -5px;
+  }
+
+  .logo_img__nav_min {
+    transform: scale(.67);
+  }
+
+  .anchor__nav {
+    font-size: 2rem;
+  }
+
+  .anchor__nav:hover {
+    font-size: 2.3rem;
+  }
+
+  .anchor__nav.active-link {
+    font-size: 2rem;
+  }
+
+  .anchor__nav:active {
+    font-size: 1.8rem;
+  }
+
+  .submenu {
+    top: calc(100% + 37px);
+    left: 28px;
+    padding: 20px 0;
+    max-width: 150px;
+  }
+
+  .submenu__anchor {
+    font-size: 1.1rem;
+  }
+}
+
+/* Styles for Large screens 4K resolution _ 3840 px above */
+@media only screen and (min-width: 3840px) {
+  .max_width__nav {
+    max-width: none;
+  }
+
+  .navbar {
+    height: 300px;
+  }
+
+  .logo_img__nav {
+    width: 1040px;
+    height: 210px;
+    border-radius: 25px;
+    margin: 15px 0 0 45px;
+  }
+
+  .logo_img__nav_min {
+    transform: scale(.67);
+  }
+
+  .anchor__nav {
+    margin-left: 80px;
+    font-size: 4rem;
+  }
+
+  .anchor__nav:hover {
+    font-size: 4.4rem;
+  }
+
+  .anchor__nav.active-link {
+    font-size: 4rem;
+  }
+
+  .anchor__nav:active {
+    font-size: 3.6rem;
+  }
+
+  .submenu {
+    top: calc(100% + 120px);
+    left: 40px;
+    padding: 20px 0;
+    max-width: 350px;
+  }
+
+  .submenu__anchor {
+    margin-top: 30px;
+    font-size: 3.1rem;
+  }
+}

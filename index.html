@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="64x64" href="./src/images/logo-er.png">
+    <link rel="stylesheet" href="./src/css/styles_0_global.css" />
+    <link rel="stylesheet" href="./src/css/styles_1_header.css" />
+    <link rel="stylesheet" href="./src/css/styles_2_home.css" />
+    <link rel="stylesheet" href="./src/css/styles_3_about.css" />
+    <link rel="stylesheet" href="./src/css/styles_4_services.css" />
+    <link rel="stylesheet" href="./src/css/styles_5_portfolio.css" />
+    <link rel="stylesheet" href="./src/css/styles_6_testimonial.css" />
+    <link rel="stylesheet" href="./src/css/styles_7_contact.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" defer></script>
+    <script src="./src/js/script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+
+    <title>Engenharia de Software</title>
+</head>
+
+<body>
+    <!-- Custom - Scroll bar -->
+    <div title="barra de progresso da rolagem" class="scrollbar" id="progressBar"></div>
+    <div title="barra de progresso da rolagem" class="scrollbar" id="scrollPath"></div>
+    <!-- Navbar - Home -->
+    <header title="barra de navegação" class="navbar">
+        <nav class="max_width__nav">
+            <div class="logo_container__nav">
+                <img title="logomarca do criador da atividade universitária" class="logo_img__nav"
+                    src="./src/images/logo.png" alt="logo do criador da atividade universitária">
+            </div>
+            <ul title="lista/menu da barra de navegação" class="menu__nav">
+                <li><a title="link 'Home' da barra de navegação" class="anchor__nav" href="#home">Home</a></li>
+                <li class="nav-item">
+                    <a title="link 'Sobre' da barra de navegação" class="anchor__nav" href="#about">Sobre</a>
+                    <ul title="submenu do link 'Sobre' da barra de navegação" class="submenu">
+                        <li><a title="link 'Nossa história' do submenu do link 'Sobre'" class="submenu__anchor"
+                                href="#our_history">Nossa História</a></li>
+                        <li><a title="link 'Políticas' do submenu do link 'Sobre'" class="submenu__anchor"
+                                href="#policies">Políticas</a></li>
+                        <li><a title="link 'Missão' do submenu do link 'Sobre'" class="submenu__anchor"
+                                href="#mission">Missão</a></li>
+                    </ul>
+                </li>
+                <li><a title="link 'Serviços' da barra de navegação" class="anchor__nav" href="#services">Serviços</a>
+                </li>
+                <li><a title="link 'Portifólio' da barra de navegação" class="anchor__nav"
+                        href="#portfolio">Portifólio</a></li>
+                <li><a title="link 'Depoimentos' da barra de navegação" class="anchor__nav"
+                        href="#testimonial">Depoimentos</a></li>
+                <li><a title="link 'Contato' da barra de navegação" class="anchor__nav" href="#contact">Contato</a></li>
+            </ul>
+            <div title="botão acionamento menu dispositivos móveis" class="btn_menu__nav" alt="botão menu">
+                <ion-icon name="menu"></ion-icon>
+            </div>
+        </nav>
+    </header>
+    <!-- Whatsapp - Link -->
+    <div title="link para o Whatsapp" class="btn_whatsapp__body">
+        <a href="https://web.whatsapp.com/send?phone=5519999021528" target="_blank">
+            <img class="image_whatsapp__body" src="./src/images/icon_whatsapp.png" alt="logo whatsapp">
+        </a>
+    </div>
+    <main>
+        <!-- Section Home -->
+        <section title="página home" class="container__home" id="home">
+            <div class="max_width__home">
+                <div class="content__home">
+                    <div class="container_left">
+                        <span title="linha superior de boas vindas" class="topline_span__home">Bem-Vindos!</span>
+                        <h1 title="informativo animado 'Edmar Radanovis - Front-End Baseado em Framework - Menu responsivo_HTML-CSS-JS'"
+                            class="h1__home">
+                            <span class="multitext_h1__home"></span>
+                        </h1>
+                        <p title="parágrafo 01: informativo referente a prestação de serviços" class="p__home"
+                            id="p1__home">
+                            Profissional na área de tecnologia, com know-how sólido e diversificado, excelentes
+                            habilidades colaborativas de comunicação em uma equipe de desenvolvimento altamente
+                            produtiva.
+                        </p>
+                        <p title="parágrafo 02: informativo especificando quais as prestação de serviços"
+                            class="p__home" id="p2__home">
+                            WebSites -App's - API's - E-commerce</p>
+                        <p title="parágrafo 03: informativo referente a prestação de serviços" class="p__home"
+                            id="p3__home">
+                            Ideias & soluções inovadoras. Entrega de resultados atraentes antes do previsto.
+                            Foco em design atrativo, <br />acessibilidade, códigos bem estruturados e de fácil
+                            manutenção.
+                        </p>
+                        <a title="botão para visita a página 'Portifólio'" class="btn__home" type="button"
+                            href="##portfolio">Visitar
+                            Portifólio</a>
+                    </div>
+                    <div class="imgbox_container__home">
+                        <img title="imagem animada de um desenvolvedor" src="./src/images/mascote.png"
+                            alt="mascote da empresa">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section About -->
+        <section title="página sobre a empresa" class="container__about" id="about">
+            <div class="content__about">
+                <section id="our_history">
+                    <img title="imagem de um escritório de T.I." class="about__img" src="./src/images/escritorio1.jpeg"
+                        alt="imagem sobre a história da empresa">
+                    <h3 title="título da seção: 'Nossa História'">Nossa História</h3>
+                    <p title="parágrafo 1: texto sobre 'Nossa História'">Fundada em [ano], nossa empresa começou com a
+                        visão de ... <br /> Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Architecto rem odit vel at sapiente necessitatibus totam
+                        asperiores ipsam quam qui aperiam quaerat eligendi.Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Architecto rem odit vel at sapiente necessitatibus totam asperiores ipsam quam
+                        qui aperiam quaerat eligendi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                        rem odit vel at sapiente necessitatibus totam asperiores ipsam quam qui aperiam quaerat
+                        eligendi.</p>
+                </section>
+                <section id="policies">
+                    <img title="imagem de um profissional vestindo terno apresentando tecnologias" class="about__img"
+                        src="./src/images/escritorio2.jpeg" alt="imagem sobre as políticas da empresa">
+                    <h3 title="título da seção: 'Políticas'">Políticas</h3>
+                    <p title="parágrafo 2: texto sobre'Políticas'">Nossas políticas são baseadas em transparência e
+                        ...<br /> Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Architecto rem odit vel at sapiente necessitatibus totam
+                        asperiores ipsam quam qui aperiam quaerat eligendi.Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Architecto rem odit vel at sapiente necessitatibus totam asperiores ipsam quam
+                        qui aperiam quaerat eligendi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                        rem odit vel at sapiente necessitatibus totam asperiores ipsam quam qui aperiam quaerat
+                        eligendi.</p>
+                </section>
+                <section id="mission">
+                    <img title="imagem de uma parede de escritório com uma mesa a frente, apresentando três quadros referentes a missão, visão e valores da empresa"
+                        class="about__img" src="./src/images/escritorio3.jpeg" alt="imagem sobre a missão da empresa">
+                    <h3 title="título da seção: 'Missão'">Missão</h3>
+                    <p title="parágrafo : texto sobre 'Missão''">Nossa missão é transformar ideias em soluções digitais
+                        ...<br /> Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Architecto rem odit vel at sapiente necessitatibus totam
+                        asperiores ipsam quam qui aperiam quaerat eligendi.Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Architecto rem odit vel at sapiente necessitatibus totam asperiores ipsam quam
+                        qui aperiam quaerat eligendi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                        rem odit vel at sapiente necessitatibus totam asperiores ipsam quam qui aperiam quaerat
+                        eligendi.</p>
+                </section>
+            </div>
+        </section>
+        <!-- Section Services -->
+        <section title="página sobre os serviços que são prestados e suas aplicações " class="container__services"
+            id="services">
+            <video class="video__services" autoplay muted loop>
+                <source src="src/video/video_em_breve_nova_pagina.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </section>
+        <!-- Section Portfolio -->
+        <section title="página sobre o portifólio" class="container__portfolio" id="portfolio">
+            <video class="video__services" autoplay muted loop>
+                <source src="src/video/video_em_breve_nova_pagina.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </section>
+        <!-- Section Testimonial -->
+        <section title="página de depoimentos" class="container__testimonial" id="testimonial">
+            <video class="video__services" autoplay muted loop>
+                <source src="src/video/video_em_breve_nova_pagina.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </section>
+        <!-- Section Contact -->
+        <section title="página de contato" class="container__contact" id="contact">
+            <video class="video__services" autoplay muted loop>
+                <source src="src/video/video_em_breve_nova_pagina.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </section>
+
+    </main>
+</body>
+
+</html>

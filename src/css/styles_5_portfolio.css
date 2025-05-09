@@ -1,0 +1,14 @@
+/* Section - portfilio*/
+.container__portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, #424040 35%, #2a2929 45%, #212121 46%, #111111 50%, #212121 54%, #2a2929 55%, #424040 65%);
+  background-attachment: fixed;
+  font-size: 16px;
+  font-family: 'Ubuntu', 'Poppins', sans-serif;
+  overflow: hidden;
+}

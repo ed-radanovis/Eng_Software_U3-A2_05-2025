@@ -49,7 +49,7 @@ The project was fully completed and some of the resources used were:
 - [x] **Frontend**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![HTML5](https://img.shields.io/badge/-HTML5-333333?style=flat&logo=HTML5)](https://developer.mozilla.org/en-US/docs/Web/HTML) &nbsp;&nbsp;[![CSS](https://img.shields.io/badge/-CSS-333333?style=flat&logo=CSS3&logoColor=1572B6)](https://developer.mozilla.org/en-US/docs/Web/CSS)&nbsp;&nbsp;[![JavaScript](https://img.shields.io/badge/-JavaScript-333333?style=flat&logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
       <br>
 
-- [x] **Development Tools and Testing**:&nbsp;&nbsp;&nbsp;[<img src="https://raw.githubusercontent.com/ed-radanovis/Soft-App-Memes-Machine-DIO-11-2022/refs/heads/master/assets/github/mini_logo_liveserver.png" width="21px" alt="Live Server Icon">![Live Server](https://img.shields.io/badge/-Live%20Server-333333?style=flat&logo=live-server)](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)&nbsp;&nbsp;`Manual testing with Browser DevTools`
+- [x] **Development Tools and Testing**:&nbsp;&nbsp;&nbsp;[<img src="https://raw.githubusercontent.com/ed-radanovis/Soft-App-Memes-Machine-DIO-11-2022/refs/heads/master/assets/github/mini_logo_liveserver.png" width="21px" alt="Live Server Icon">![Live Server](https://img.shields.io/badge/-Live%20Server-333333?style=flat&logo=live-server)](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)&nbsp;&nbsp;[![Browser DevTools](https://img.shields.io/badge/-Browser_DevTools-333333?style=flat&logo=google-chrome)](https://developer.chrome.com/docs/devtools/)
       <br>
 
 - [x] **Hosting and Deployment**:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![GitHub Pages](https://img.shields.io/badge/-GitHub%20Pages-333333?style=flat&logo=github&logoColor=ffffff)](https://pages.github.com/)
@@ -143,3 +143,4 @@ git clone https://github.com/ed-radanovis/Eng_Software_U3-A2_05-2025.git
 <br>
 
 [⬆ Back to top](#responsive-navigation-menu-using-front-end-development-with-html-css-javascript)
+
